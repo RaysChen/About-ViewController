@@ -15,6 +15,11 @@
 		15C80D881D810BD300E6E2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C80D861D810BD300E6E2DA /* LaunchScreen.storyboard */; };
 		15C80D931D810BD300E6E2DA /* _________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80D921D810BD300E6E2DA /* _________Tests.m */; };
 		15C80D9E1D810BD300E6E2DA /* _________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80D9D1D810BD300E6E2DA /* _________UITests.m */; };
+		15C80DAD1D81491100E6E2DA /* CXOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DAC1D81491100E6E2DA /* CXOneViewController.m */; };
+		15C80DB11D81494500E6E2DA /* CXTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DAF1D81494500E6E2DA /* CXTwoViewController.m */; };
+		15C80DB21D81494500E6E2DA /* CXTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C80DB01D81494500E6E2DA /* CXTwoViewController.xib */; };
+		15C80DB61D81496400E6E2DA /* CXThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DB41D81496400E6E2DA /* CXThreeViewController.m */; };
+		15C80DB71D81496400E6E2DA /* CXThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C80DB51D81496400E6E2DA /* CXThreeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		15C80D991D810BD300E6E2DA /* 自定义控制器的切换UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义控制器的切换UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C80D9D1D810BD300E6E2DA /* _________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________UITests.m"; sourceTree = "<group>"; };
 		15C80D9F1D810BD300E6E2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C80DAB1D81491100E6E2DA /* CXOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXOneViewController.h; sourceTree = "<group>"; };
+		15C80DAC1D81491100E6E2DA /* CXOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXOneViewController.m; sourceTree = "<group>"; };
+		15C80DAE1D81494500E6E2DA /* CXTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXTwoViewController.h; sourceTree = "<group>"; };
+		15C80DAF1D81494500E6E2DA /* CXTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTwoViewController.m; sourceTree = "<group>"; };
+		15C80DB01D81494500E6E2DA /* CXTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CXTwoViewController.xib; sourceTree = "<group>"; };
+		15C80DB31D81496400E6E2DA /* CXThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXThreeViewController.h; sourceTree = "<group>"; };
+		15C80DB41D81496400E6E2DA /* CXThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXThreeViewController.m; sourceTree = "<group>"; };
+		15C80DB51D81496400E6E2DA /* CXThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CXThreeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +119,14 @@
 				15C80D7E1D810BD300E6E2DA /* ViewController.h */,
 				15C80D7F1D810BD300E6E2DA /* ViewController.m */,
 				15C80D811D810BD300E6E2DA /* Main.storyboard */,
+				15C80DAB1D81491100E6E2DA /* CXOneViewController.h */,
+				15C80DAC1D81491100E6E2DA /* CXOneViewController.m */,
+				15C80DAE1D81494500E6E2DA /* CXTwoViewController.h */,
+				15C80DAF1D81494500E6E2DA /* CXTwoViewController.m */,
+				15C80DB01D81494500E6E2DA /* CXTwoViewController.xib */,
+				15C80DB31D81496400E6E2DA /* CXThreeViewController.h */,
+				15C80DB41D81496400E6E2DA /* CXThreeViewController.m */,
+				15C80DB51D81496400E6E2DA /* CXThreeViewController.xib */,
 				15C80D841D810BD300E6E2DA /* Assets.xcassets */,
 				15C80D861D810BD300E6E2DA /* LaunchScreen.storyboard */,
 				15C80D891D810BD300E6E2DA /* Info.plist */,
@@ -246,9 +267,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C80DB21D81494500E6E2DA /* CXTwoViewController.xib in Resources */,
 				15C80D881D810BD300E6E2DA /* LaunchScreen.storyboard in Resources */,
 				15C80D851D810BD300E6E2DA /* Assets.xcassets in Resources */,
 				15C80D831D810BD300E6E2DA /* Main.storyboard in Resources */,
+				15C80DB71D81496400E6E2DA /* CXThreeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C80DAD1D81491100E6E2DA /* CXOneViewController.m in Sources */,
+				15C80DB11D81494500E6E2DA /* CXTwoViewController.m in Sources */,
 				15C80D801D810BD300E6E2DA /* ViewController.m in Sources */,
 				15C80D7D1D810BD300E6E2DA /* AppDelegate.m in Sources */,
+				15C80DB61D81496400E6E2DA /* CXThreeViewController.m in Sources */,
 				15C80D7A1D810BD300E6E2DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

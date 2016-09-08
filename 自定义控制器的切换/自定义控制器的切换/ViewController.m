@@ -7,12 +7,36 @@
 //
 
 #import "ViewController.h"
+#import "CXOneViewController.h"
+#import "CXTwoViewController.h"
+#import "CXThreeViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+//点击按钮1的时候调用
+- (IBAction)oneClick {
+    CXOneViewController *one = [[CXOneViewController alloc] init];
+    one.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+    [self.view addSubview:one.view];
+}
+
+//点击按钮2的时候调用
+- (IBAction)twoClick {
+    CXTwoViewController *two = [[CXTwoViewController alloc]init];
+    two.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+    [self.view addSubview:two.view];
+}
+
+//点击按钮3的时候调用
+- (IBAction)threeClick {
+    CXThreeViewController *three = [[CXThreeViewController alloc] init];
+    three.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+    [self.view addSubview:three.view];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
