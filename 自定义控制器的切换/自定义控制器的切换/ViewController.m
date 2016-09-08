@@ -13,29 +13,52 @@
 
 @interface ViewController ()
 
+@property (nonatomic,strong) CXOneViewController *one;
+@property (nonatomic,strong) CXTwoViewController *two;
+@property (nonatomic,strong) CXThreeViewController *three;
+
 @end
 
 @implementation ViewController
 
 //点击按钮1的时候调用
 - (IBAction)oneClick {
-    CXOneViewController *one = [[CXOneViewController alloc] init];
-    one.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
-    [self.view addSubview:one.view];
+    //创建控制器
+    if (self.one == nil) {
+        
+        self.one = [[CXOneViewController alloc] init];
+        self. one.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+
+    }
+    
+    //添加控制器的view
+    [self.view addSubview:self.one.view];
 }
 
 //点击按钮2的时候调用
 - (IBAction)twoClick {
-    CXTwoViewController *two = [[CXTwoViewController alloc]init];
-    two.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
-    [self.view addSubview:two.view];
+    //创建控制器
+    if (self.two == nil) {
+        self.two = [[CXTwoViewController alloc]init];
+        self.two.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+    }
+   
+    //添加控制器的view
+    [self.view addSubview:self.two.view];
 }
 
 //点击按钮3的时候调用
 - (IBAction)threeClick {
-    CXThreeViewController *three = [[CXThreeViewController alloc] init];
-    three.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
-    [self.view addSubview:three.view];
+    
+    //创建控制器
+    if (self.three == nil) {
+        self.three = [[CXThreeViewController alloc] init];
+        self.three.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+
+    }
+    
+    //添加控制器的view
+    [self.view addSubview:self.three.view];
 }
 
 - (void)viewDidLoad {
@@ -50,7 +73,10 @@
 
 /**
  *  有问题
- 1.控制器重复创建了
- 2.控制器死了，view还在啊。。
+ 1.控制器重复创建了 slu
+ 2.控制器死了，view还在啊。。slu
+ 
+ 新问题
+ 3个控制器的view 同时出现了
  */
 @end
