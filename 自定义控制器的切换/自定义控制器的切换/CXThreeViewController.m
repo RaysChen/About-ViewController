@@ -19,6 +19,13 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+//打印看看控制器是不是死了
+-(void)dealloc{
+
+    NSLog(@"CXThreeViewController---dealloc");
+
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -23,6 +23,13 @@ NSString *ID = @"one";
     
 }
 
+//打印看看控制器是不是死了
+- (void)dealloc{
+ 
+    NSLog(@"CXOneViewController---dealloc");
+ 
+}
+
 
 #pragma mark - Table view data source
 

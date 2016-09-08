@@ -48,4 +48,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ *  有问题
+ 1.控制器重复创建了
+ 2.控制器死了，view还在啊。。
+ */
 @end
