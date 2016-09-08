@@ -30,6 +30,9 @@
         self. one.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
 
     }
+    //移除其他的控制器view
+    [self.two.view removeFromSuperview];
+    [self.three.view removeFromSuperview];
     
     //添加控制器的view
     [self.view addSubview:self.one.view];
@@ -42,6 +45,10 @@
         self.two = [[CXTwoViewController alloc]init];
         self.two.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
     }
+    
+    //移除其他控制器的view
+    [self.one.view removeFromSuperview];
+    [self.three.view removeFromSuperview];
    
     //添加控制器的view
     [self.view addSubview:self.two.view];
@@ -56,6 +63,10 @@
         self.three.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
 
     }
+    
+    //移除其他控制器的view
+    [self.one.view removeFromSuperview];
+    [self.two.view removeFromSuperview];
     
     //添加控制器的view
     [self.view addSubview:self.three.view];
