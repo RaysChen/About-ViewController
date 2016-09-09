@@ -18,7 +18,10 @@
 //@property (nonatomic,strong) CXThreeViewController *three;
 
 //正在显示控制器
-@property (nonatomic, strong) UIViewController *showVc;
+@property (nonatomic, weak) UIViewController *showVc;
+
+//用来存放子控制器的view
+@property (nonatomic, weak) UIView *contentView;
 
 //存放控制器的数组
 //@property (nonatomic, strong) NSArray *allVc;
@@ -29,6 +32,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    UIView *contentView = [[UIView alloc]init];
+    contentView.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+    [self.view addSubview:contentView];
+    self.contentView = contentView;
     
    /* self.allVc = @[
                    [[CXOneViewController alloc]init],
@@ -58,13 +67,23 @@
     //获得控制器的位置（索引）（拿出按钮的父控件的数组，看下按钮在数组中的位置）
      NSUInteger index = [button.superview.subviews indexOfObject:button];
     
+    // 当前控制器的索引
+    NSUInteger oldIndex = [self.childViewControllers indexOfObject:self.showVc];
+
+    
     //添加控制器的view
     self.showVc = self.childViewControllers[index];
-    self.showVc.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
-    [self.view addSubview:self.showVc.view];
+    self.showVc.view.frame = self.contentView.bounds;
+    [self.contentView addSubview:self.showVc.view];
     
-    
-    
+    //动画
+    CATransition *animation = [CATransition animation];
+    animation.type = @"cube";
+    animation.subtype = index > oldIndex ? kCATransitionFromRight : kCATransitionFromLeft;
+    animation.duration = 0.5;
+    [self.contentView.layer addAnimation:animation forKey:nil];
+
+
 }
 
 
