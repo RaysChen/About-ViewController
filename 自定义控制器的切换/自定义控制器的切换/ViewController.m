@@ -21,7 +21,7 @@
 @property (nonatomic, strong) UIViewController *showVc;
 
 //存放控制器的数组
-@property (nonatomic, strong) NSArray *allVc;
+//@property (nonatomic, strong) NSArray *allVc;
 
 @end
 
@@ -30,11 +30,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.allVc = @[
+   /* self.allVc = @[
                    [[CXOneViewController alloc]init],
                    [[CXTwoViewController alloc]init],
                    [[CXThreeViewController alloc]init]
                    ];
+    */
+    
+    
+    // 通过addChildViewController添加的控制器都会存在于childViewControllers数组中
+    [self addChildViewController:[[CXOneViewController alloc]init]];
+    [self addChildViewController:[[CXTwoViewController alloc]init]];
+    [self addChildViewController:[[CXThreeViewController alloc]init]];
+    
+    // 将CXOneViewController从childViewControllers数组中移除
+    //    [self.childViewControllers[0] removeFromParentViewController];
+
+
+    
 }
 
 
@@ -42,11 +55,11 @@
     //移除其他控制器view
     [self.showVc.view removeFromSuperview];
     
-    //获得控制器的位置（索引）
+    //获得控制器的位置（索引）（拿出按钮的父控件的数组，看下按钮在数组中的位置）
      NSUInteger index = [button.superview.subviews indexOfObject:button];
     
     //添加控制器的view
-    self.showVc = self.allVc[index];
+    self.showVc = self.childViewControllers[index];
     self.showVc.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
     [self.view addSubview:self.showVc.view];
     
