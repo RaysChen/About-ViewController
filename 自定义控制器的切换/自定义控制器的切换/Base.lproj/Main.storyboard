@@ -24,21 +24,21 @@
                                         <rect key="frame" x="190" y="0.0" width="30" height="44"/>
                                         <state key="normal" title="2"/>
                                         <connections>
-                                            <action selector="twoClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="dn9-nF-5Hh"/>
+                                            <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckr-cY-z3L"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK9-aV-wlN">
                                         <rect key="frame" x="345" y="0.0" width="30" height="44"/>
                                         <state key="normal" title="3"/>
                                         <connections>
-                                            <action selector="threeClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xa4-E8-DHZ"/>
+                                            <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hb7-uo-DaR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5I6-Uj-yHX">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="44"/>
                                         <state key="normal" title="1"/>
                                         <connections>
-                                            <action selector="oneClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="RBE-Uk-a3w"/>
+                                            <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7x-rB-ml4"/>
                                         </connections>
                                     </button>
                                 </subviews>

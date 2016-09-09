@@ -13,14 +13,49 @@
 
 @interface ViewController ()
 
-@property (nonatomic,strong) CXOneViewController *one;
-@property (nonatomic,strong) CXTwoViewController *two;
-@property (nonatomic,strong) CXThreeViewController *three;
+//@property (nonatomic,strong) CXOneViewController *one;
+//@property (nonatomic,strong) CXTwoViewController *two;
+//@property (nonatomic,strong) CXThreeViewController *three;
+
+//正在显示控制器
+@property (nonatomic, strong) UIViewController *showVc;
+
+//存放控制器的数组
+@property (nonatomic, strong) NSArray *allVc;
 
 @end
 
 @implementation ViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.allVc = @[
+                   [[CXOneViewController alloc]init],
+                   [[CXTwoViewController alloc]init],
+                   [[CXThreeViewController alloc]init]
+                   ];
+}
+
+
+- (IBAction)buttonClick:(UIButton *)button {
+    //移除其他控制器view
+    [self.showVc.view removeFromSuperview];
+    
+    //获得控制器的位置（索引）
+     NSUInteger index = [button.superview.subviews indexOfObject:button];
+    
+    //添加控制器的view
+    self.showVc = self.allVc[index];
+    self.showVc.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+    [self.view addSubview:self.showVc.view];
+    
+    
+    
+}
+
+
+/*
 //点击按钮1的时候调用
 - (IBAction)oneClick {
     //创建控制器
@@ -72,15 +107,14 @@
     [self.view addSubview:self.three.view];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+ 
+ */
 
 /**
  *  有问题
