@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "CXCategoryViewController.h"
+#import "CXSubcategoryViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,12 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CGFloat width = self.view.frame.size.width * 0.5;
+    CGFloat height = self.view.frame.size.height;
+    
+    CXSubcategoryViewController *subcategoryVc = [[CXSubcategoryViewController alloc] init];
+    subcategoryVc.view.frame = CGRectMake(width, 0, width, height);
+    [self addChildViewController:subcategoryVc];
+    [self.view addSubview:subcategoryVc.view];
+    
+    CXCategoryViewController *categoryVc = [[CXCategoryViewController alloc] init];
+    categoryVc.view.frame = CGRectMake(0, 0, width, height);
+    [self addChildViewController:categoryVc];
+    [self.view addSubview:categoryVc.view];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

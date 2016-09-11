@@ -15,6 +15,8 @@
 		15C80DD41D85627E00E6E2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C80DD21D85627E00E6E2DA /* LaunchScreen.storyboard */; };
 		15C80DDF1D85627E00E6E2DA /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DDE1D85627E00E6E2DA /* ____Tests.m */; };
 		15C80DEA1D85627E00E6E2DA /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DE91D85627E00E6E2DA /* ____UITests.m */; };
+		15C80DF91D857FF900E6E2DA /* CXCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DF81D857FF900E6E2DA /* CXCategoryViewController.m */; };
+		15C80DFC1D85802F00E6E2DA /* CXSubcategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DFB1D85802F00E6E2DA /* CXSubcategoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		15C80DE51D85627E00E6E2DA /* 级联菜单UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "级联菜单UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C80DE91D85627E00E6E2DA /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		15C80DEB1D85627E00E6E2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C80DF71D857FF900E6E2DA /* CXCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCategoryViewController.h; sourceTree = "<group>"; };
+		15C80DF81D857FF900E6E2DA /* CXCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCategoryViewController.m; sourceTree = "<group>"; };
+		15C80DFA1D85802F00E6E2DA /* CXSubcategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXSubcategoryViewController.h; sourceTree = "<group>"; };
+		15C80DFB1D85802F00E6E2DA /* CXSubcategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXSubcategoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				15C80DD21D85627E00E6E2DA /* LaunchScreen.storyboard */,
 				15C80DD51D85627E00E6E2DA /* Info.plist */,
 				15C80DC41D85627E00E6E2DA /* Supporting Files */,
+				15C80DF71D857FF900E6E2DA /* CXCategoryViewController.h */,
+				15C80DF81D857FF900E6E2DA /* CXCategoryViewController.m */,
+				15C80DFA1D85802F00E6E2DA /* CXSubcategoryViewController.h */,
+				15C80DFB1D85802F00E6E2DA /* CXSubcategoryViewController.m */,
 			);
 			path = "级联菜单";
 			sourceTree = "<group>";
@@ -273,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C80DFC1D85802F00E6E2DA /* CXSubcategoryViewController.m in Sources */,
 				15C80DCC1D85627E00E6E2DA /* ViewController.m in Sources */,
+				15C80DF91D857FF900E6E2DA /* CXCategoryViewController.m in Sources */,
 				15C80DC91D85627E00E6E2DA /* AppDelegate.m in Sources */,
 				15C80DC61D85627E00E6E2DA /* main.m in Sources */,
 			);
