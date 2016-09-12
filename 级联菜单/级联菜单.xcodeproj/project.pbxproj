@@ -17,6 +17,8 @@
 		15C80DEA1D85627E00E6E2DA /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DE91D85627E00E6E2DA /* ____UITests.m */; };
 		15C80DF91D857FF900E6E2DA /* CXCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DF81D857FF900E6E2DA /* CXCategoryViewController.m */; };
 		15C80DFC1D85802F00E6E2DA /* CXSubcategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80DFB1D85802F00E6E2DA /* CXSubcategoryViewController.m */; };
+		15C80DFE1D86518100E6E2DA /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15C80DFD1D86518100E6E2DA /* categories.plist */; };
+		15C80E011D86525D00E6E2DA /* CXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80E001D86525D00E6E2DA /* CXCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		15C80DF81D857FF900E6E2DA /* CXCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCategoryViewController.m; sourceTree = "<group>"; };
 		15C80DFA1D85802F00E6E2DA /* CXSubcategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXSubcategoryViewController.h; sourceTree = "<group>"; };
 		15C80DFB1D85802F00E6E2DA /* CXSubcategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXSubcategoryViewController.m; sourceTree = "<group>"; };
+		15C80DFD1D86518100E6E2DA /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		15C80DFF1D86525D00E6E2DA /* CXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCategory.h; sourceTree = "<group>"; };
+		15C80E001D86525D00E6E2DA /* CXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCategory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,9 @@
 				15C80DF81D857FF900E6E2DA /* CXCategoryViewController.m */,
 				15C80DFA1D85802F00E6E2DA /* CXSubcategoryViewController.h */,
 				15C80DFB1D85802F00E6E2DA /* CXSubcategoryViewController.m */,
+				15C80DFD1D86518100E6E2DA /* categories.plist */,
+				15C80DFF1D86525D00E6E2DA /* CXCategory.h */,
+				15C80E001D86525D00E6E2DA /* CXCategory.m */,
 			);
 			path = "级联菜单";
 			sourceTree = "<group>";
@@ -256,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C80DFE1D86518100E6E2DA /* categories.plist in Resources */,
 				15C80DD41D85627E00E6E2DA /* LaunchScreen.storyboard in Resources */,
 				15C80DD11D85627E00E6E2DA /* Assets.xcassets in Resources */,
 				15C80DCF1D85627E00E6E2DA /* Main.storyboard in Resources */,
@@ -285,6 +294,7 @@
 			files = (
 				15C80DFC1D85802F00E6E2DA /* CXSubcategoryViewController.m in Sources */,
 				15C80DCC1D85627E00E6E2DA /* ViewController.m in Sources */,
+				15C80E011D86525D00E6E2DA /* CXCategory.m in Sources */,
 				15C80DF91D857FF900E6E2DA /* CXCategoryViewController.m in Sources */,
 				15C80DC91D85627E00E6E2DA /* AppDelegate.m in Sources */,
 				15C80DC61D85627E00E6E2DA /* main.m in Sources */,
@@ -513,6 +523,7 @@
 				15C80DF01D85627E00E6E2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15C80DF11D85627E00E6E2DA /* Build configuration list for PBXNativeTarget "级联菜单Tests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +532,7 @@
 				15C80DF31D85627E00E6E2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15C80DF41D85627E00E6E2DA /* Build configuration list for PBXNativeTarget "级联菜单UITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +541,7 @@
 				15C80DF61D85627E00E6E2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
