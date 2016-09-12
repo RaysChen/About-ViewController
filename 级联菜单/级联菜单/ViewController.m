@@ -27,6 +27,7 @@
     [self.view addSubview:subcategoryVc.view];
     
     CXCategoryViewController *categoryVc = [[CXCategoryViewController alloc] init];
+    categoryVc.delegate = subcategoryVc;
     categoryVc.view.frame = CGRectMake(0, 0, width, height);
     [self addChildViewController:categoryVc];
     [self.view addSubview:categoryVc.view];

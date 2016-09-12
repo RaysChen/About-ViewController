@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CXCategoryViewController;
+
+@protocol CXCategoryViewControllerDelegate <NSObject>
+@optional
+
+
+- (void)categoryViewController:(CXCategoryViewController *)categoryViewController didSelectSubcategories:(NSArray *)subcategories;
+
+@end
 
 @interface CXCategoryViewController : UITableViewController
-
+@property (nonatomic, weak) id<CXCategoryViewControllerDelegate> delegate;
 @end

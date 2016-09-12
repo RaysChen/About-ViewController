@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CXCategoryViewController.h"
 
 @interface CXSubcategoryViewController : UITableViewController
+                                         <CXCategoryViewControllerDelegate>
 
 @end

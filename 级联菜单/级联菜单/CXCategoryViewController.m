@@ -12,7 +12,7 @@
 @interface CXCategoryViewController ()
 
 //所有子类别的数据
-@property (nonatomic, strong) NSArray *catagories;
+@property (nonatomic, strong) NSArray *categories;
 @end
 
 @implementation CXCategoryViewController
@@ -21,17 +21,17 @@
 //加载模型
 - (NSArray *)catagories{
 
-    if (_catagories == nil) {
+    if (_categories == nil) {
         NSArray *dictArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"categories" ofType:@"plist"]];
         
         NSMutableArray *categoryArray = [NSMutableArray array];
         for (NSDictionary *dict in dictArray) {
             [categoryArray addObject:[CXCategory categoryWithDict:dict]];
         }
-        _catagories = categoryArray;
+        _categories = categoryArray;
     }
     
-    return _catagories;
+    return _categories;
 }
 
 static  NSString*categoryID = @"category";
@@ -58,7 +58,7 @@ static  NSString*categoryID = @"category";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:categoryID];
-    CXCategory *c = self.catagories[indexPath.row];
+    CXCategory *c = self.categories[indexPath.row];
     
     cell.imageView.image = [UIImage imageNamed:c.icon];
     cell.imageView.highlightedImage = [UIImage imageNamed:c.highlighted_icon];
@@ -71,6 +71,18 @@ static  NSString*categoryID = @"category";
     
     
 }
+
+#pragma mark - <代理方法>
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // 告诉代理
+    if ([self.delegate respondsToSelector:@selector(categoryViewController:didSelectSubcategories:)]) {
+        CXCategory *c = self.categories[indexPath.row];
+        [self.delegate categoryViewController:self didSelectSubcategories:c.subcategories];
+    }
+}
+
+
 
 
 
