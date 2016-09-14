@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1588F2E21D8960C900156D71 /* CXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588F2E11D8960C900156D71 /* CXCategory.m */; };
 		15C80EA41D87DD5F00E6E2DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EA31D87DD5F00E6E2DA /* main.m */; };
 		15C80EA71D87DD5F00E6E2DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EA61D87DD5F00E6E2DA /* AppDelegate.m */; };
 		15C80EAA1D87DD5F00E6E2DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EA91D87DD5F00E6E2DA /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1588F2E01D8960C900156D71 /* CXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCategory.h; sourceTree = "<group>"; };
+		1588F2E11D8960C900156D71 /* CXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCategory.m; sourceTree = "<group>"; };
 		15C80E9F1D87DD5F00E6E2DA /* 两个tableview共用一个数据源.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "两个tableview共用一个数据源.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C80EA31D87DD5F00E6E2DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15C80EA51D87DD5F00E6E2DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				15C80EB01D87DD5F00E6E2DA /* LaunchScreen.storyboard */,
 				15C80EB31D87DD5F00E6E2DA /* Info.plist */,
 				15C80EA21D87DD5F00E6E2DA /* Supporting Files */,
+				1588F2E01D8960C900156D71 /* CXCategory.h */,
+				1588F2E11D8960C900156D71 /* CXCategory.m */,
 			);
 			path = "两个tableview共用一个数据源";
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1588F2E21D8960C900156D71 /* CXCategory.m in Sources */,
 				15C80EAA1D87DD5F00E6E2DA /* ViewController.m in Sources */,
 				15C80EA71D87DD5F00E6E2DA /* AppDelegate.m in Sources */,
 				15C80EA41D87DD5F00E6E2DA /* main.m in Sources */,
@@ -501,6 +507,7 @@
 				15C80ECE1D87DD5F00E6E2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15C80ECF1D87DD5F00E6E2DA /* Build configuration list for PBXNativeTarget "两个tableview共用一个数据源Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +516,7 @@
 				15C80ED11D87DD5F00E6E2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15C80ED21D87DD5F00E6E2DA /* Build configuration list for PBXNativeTarget "两个tableview共用一个数据源UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +525,7 @@
 				15C80ED41D87DD5F00E6E2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
