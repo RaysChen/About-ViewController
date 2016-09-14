@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1588F2E21D8960C900156D71 /* CXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588F2E11D8960C900156D71 /* CXCategory.m */; };
+		1588F2E41D89668600156D71 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1588F2E31D89668600156D71 /* categories.plist */; };
+		1588F2E61D89672600156D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1588F2E51D89672600156D71 /* Assets.xcassets */; };
 		15C80EA41D87DD5F00E6E2DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EA31D87DD5F00E6E2DA /* main.m */; };
 		15C80EA71D87DD5F00E6E2DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EA61D87DD5F00E6E2DA /* AppDelegate.m */; };
 		15C80EAA1D87DD5F00E6E2DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EA91D87DD5F00E6E2DA /* ViewController.m */; };
 		15C80EAD1D87DD5F00E6E2DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C80EAB1D87DD5F00E6E2DA /* Main.storyboard */; };
-		15C80EAF1D87DD5F00E6E2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C80EAE1D87DD5F00E6E2DA /* Assets.xcassets */; };
 		15C80EB21D87DD5F00E6E2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C80EB01D87DD5F00E6E2DA /* LaunchScreen.storyboard */; };
 		15C80EBD1D87DD5F00E6E2DA /* __tableview_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EBC1D87DD5F00E6E2DA /* __tableview_______Tests.m */; };
 		15C80EC81D87DD5F00E6E2DA /* __tableview_______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EC71D87DD5F00E6E2DA /* __tableview_______UITests.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		1588F2E01D8960C900156D71 /* CXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCategory.h; sourceTree = "<group>"; };
 		1588F2E11D8960C900156D71 /* CXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCategory.m; sourceTree = "<group>"; };
+		1588F2E31D89668600156D71 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		1588F2E51D89672600156D71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		15C80E9F1D87DD5F00E6E2DA /* 两个tableview共用一个数据源.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "两个tableview共用一个数据源.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C80EA31D87DD5F00E6E2DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15C80EA51D87DD5F00E6E2DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,7 +48,6 @@
 		15C80EA81D87DD5F00E6E2DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		15C80EA91D87DD5F00E6E2DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		15C80EAC1D87DD5F00E6E2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		15C80EAE1D87DD5F00E6E2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15C80EB11D87DD5F00E6E2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15C80EB31D87DD5F00E6E2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15C80EB81D87DD5F00E6E2DA /* 两个tableview共用一个数据源Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "两个tableview共用一个数据源Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,12 +111,12 @@
 				15C80EA81D87DD5F00E6E2DA /* ViewController.h */,
 				15C80EA91D87DD5F00E6E2DA /* ViewController.m */,
 				15C80EAB1D87DD5F00E6E2DA /* Main.storyboard */,
-				15C80EAE1D87DD5F00E6E2DA /* Assets.xcassets */,
 				15C80EB01D87DD5F00E6E2DA /* LaunchScreen.storyboard */,
 				15C80EB31D87DD5F00E6E2DA /* Info.plist */,
-				15C80EA21D87DD5F00E6E2DA /* Supporting Files */,
+				1588F2E51D89672600156D71 /* Assets.xcassets */,
 				1588F2E01D8960C900156D71 /* CXCategory.h */,
 				1588F2E11D8960C900156D71 /* CXCategory.m */,
+				15C80EA21D87DD5F00E6E2DA /* Supporting Files */,
 			);
 			path = "两个tableview共用一个数据源";
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 		15C80EA21D87DD5F00E6E2DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1588F2E31D89668600156D71 /* categories.plist */,
 				15C80EA31D87DD5F00E6E2DA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -251,8 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1588F2E41D89668600156D71 /* categories.plist in Resources */,
 				15C80EB21D87DD5F00E6E2DA /* LaunchScreen.storyboard in Resources */,
-				15C80EAF1D87DD5F00E6E2DA /* Assets.xcassets in Resources */,
+				1588F2E61D89672600156D71 /* Assets.xcassets in Resources */,
 				15C80EAD1D87DD5F00E6E2DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
