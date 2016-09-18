@@ -29,8 +29,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="category" destination="rhK-tY-bNk" id="6eF-9v-Uvz"/>
-                        <outlet property="subCategory" destination="9dr-3H-nwP" id="3t6-lV-TBR"/>
+                        <outlet property="categoryTableView" destination="rhK-tY-bNk" id="N5C-6d-XD8"/>
+                        <outlet property="subCategoryTableView" destination="9dr-3H-nwP" id="NXl-iP-f34"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

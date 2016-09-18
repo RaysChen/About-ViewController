@@ -16,7 +16,6 @@
 		15C80EAD1D87DD5F00E6E2DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C80EAB1D87DD5F00E6E2DA /* Main.storyboard */; };
 		15C80EB21D87DD5F00E6E2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C80EB01D87DD5F00E6E2DA /* LaunchScreen.storyboard */; };
 		15C80EBD1D87DD5F00E6E2DA /* __tableview_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EBC1D87DD5F00E6E2DA /* __tableview_______Tests.m */; };
-		15C80EC81D87DD5F00E6E2DA /* __tableview_______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80EC71D87DD5F00E6E2DA /* __tableview_______UITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +53,6 @@
 		15C80EBC1D87DD5F00E6E2DA /* __tableview_______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__tableview_______Tests.m"; sourceTree = "<group>"; };
 		15C80EBE1D87DD5F00E6E2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15C80EC31D87DD5F00E6E2DA /* 两个tableview共用一个数据源UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "两个tableview共用一个数据源UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		15C80EC71D87DD5F00E6E2DA /* __tableview_______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__tableview_______UITests.m"; sourceTree = "<group>"; };
-		15C80EC91D87DD5F00E6E2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +85,6 @@
 			children = (
 				15C80EA11D87DD5F00E6E2DA /* 两个tableview共用一个数据源 */,
 				15C80EBB1D87DD5F00E6E2DA /* 两个tableview共用一个数据源Tests */,
-				15C80EC61D87DD5F00E6E2DA /* 两个tableview共用一个数据源UITests */,
 				15C80EA01D87DD5F00E6E2DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,15 +133,6 @@
 				15C80EBE1D87DD5F00E6E2DA /* Info.plist */,
 			);
 			path = "两个tableview共用一个数据源Tests";
-			sourceTree = "<group>";
-		};
-		15C80EC61D87DD5F00E6E2DA /* 两个tableview共用一个数据源UITests */ = {
-			isa = PBXGroup;
-			children = (
-				15C80EC71D87DD5F00E6E2DA /* __tableview_______UITests.m */,
-				15C80EC91D87DD5F00E6E2DA /* Info.plist */,
-			);
-			path = "两个tableview共用一个数据源UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15C80EC81D87DD5F00E6E2DA /* __tableview_______UITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
