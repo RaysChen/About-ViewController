@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150AB05E1D91354600396DA9 /* CXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150AB05D1D91354600396DA9 /* CXHomeViewController.m */; };
 		15F2D2081D8FF50300BB0D26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2D2071D8FF50300BB0D26 /* main.m */; };
 		15F2D20B1D8FF50300BB0D26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2D20A1D8FF50300BB0D26 /* AppDelegate.m */; };
-		15F2D20E1D8FF50300BB0D26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2D20D1D8FF50300BB0D26 /* ViewController.m */; };
 		15F2D2111D8FF50300BB0D26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F2D20F1D8FF50300BB0D26 /* Main.storyboard */; };
 		15F2D2131D8FF50300BB0D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F2D2121D8FF50300BB0D26 /* Assets.xcassets */; };
 		15F2D2161D8FF50300BB0D26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F2D2141D8FF50300BB0D26 /* LaunchScreen.storyboard */; };
@@ -35,12 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150AB05C1D91354600396DA9 /* CXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHomeViewController.h; sourceTree = "<group>"; };
+		150AB05D1D91354600396DA9 /* CXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHomeViewController.m; sourceTree = "<group>"; };
 		15F2D2031D8FF50300BB0D26 /* 模仿网易新闻首页.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "模仿网易新闻首页.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F2D2071D8FF50300BB0D26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15F2D2091D8FF50300BB0D26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15F2D20A1D8FF50300BB0D26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		15F2D20C1D8FF50300BB0D26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		15F2D20D1D8FF50300BB0D26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		15F2D2101D8FF50300BB0D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15F2D2121D8FF50300BB0D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15F2D2151D8FF50300BB0D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			children = (
 				15F2D2091D8FF50300BB0D26 /* AppDelegate.h */,
 				15F2D20A1D8FF50300BB0D26 /* AppDelegate.m */,
-				15F2D20C1D8FF50300BB0D26 /* ViewController.h */,
-				15F2D20D1D8FF50300BB0D26 /* ViewController.m */,
+				150AB05C1D91354600396DA9 /* CXHomeViewController.h */,
+				150AB05D1D91354600396DA9 /* CXHomeViewController.m */,
 				15F2D20F1D8FF50300BB0D26 /* Main.storyboard */,
 				15F2D2121D8FF50300BB0D26 /* Assets.xcassets */,
 				15F2D2141D8FF50300BB0D26 /* LaunchScreen.storyboard */,
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15F2D20E1D8FF50300BB0D26 /* ViewController.m in Sources */,
+				150AB05E1D91354600396DA9 /* CXHomeViewController.m in Sources */,
 				15F2D20B1D8FF50300BB0D26 /* AppDelegate.m in Sources */,
 				15F2D2081D8FF50300BB0D26 /* main.m in Sources */,
 			);
@@ -501,6 +501,7 @@
 				15F2D2321D8FF50300BB0D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15F2D2331D8FF50300BB0D26 /* Build configuration list for PBXNativeTarget "模仿网易新闻首页Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +510,7 @@
 				15F2D2351D8FF50300BB0D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15F2D2361D8FF50300BB0D26 /* Build configuration list for PBXNativeTarget "模仿网易新闻首页UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +519,7 @@
 				15F2D2381D8FF50300BB0D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
