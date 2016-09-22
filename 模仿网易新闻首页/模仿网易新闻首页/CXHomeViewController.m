@@ -7,6 +7,7 @@
 //
 
 #import "CXHomeViewController.h"
+#import "CXSocialViewController.h"
 
 @interface CXHomeViewController ()
 
@@ -19,14 +20,61 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
+    //添加子控制器
+    [self setupChildVc];
+    
+    //添加标题
     [self setupTitle];
+    
+    
+   
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+/**
+ *添加子控制器
+ */
+- (void)setupChildVc{
+
+    CXSocialViewController *social0 = [[CXSocialViewController alloc] init];
+    social0.title = @"国际";
+    [self addChildViewController:social0];
+    
+    CXSocialViewController *social1 = [[CXSocialViewController alloc] init];
+    social1.title = @"军事";
+    [self addChildViewController:social1];
+    
+    CXSocialViewController *social2 = [[CXSocialViewController alloc] init];
+    social2.title = @"社会";
+    [self addChildViewController:social2];
+    
+    CXSocialViewController *social3 = [[CXSocialViewController alloc] init];
+    social3.title = @"政治";
+    [self addChildViewController:social3];
+    
+    CXSocialViewController *social4 = [[CXSocialViewController alloc] init];
+    social4.title = @"经济";
+    [self addChildViewController:social4];
+    
+    CXSocialViewController *social5 = [[CXSocialViewController alloc] init];
+    social5.title = @"体育";
+    [self addChildViewController:social5];
+    
+    CXSocialViewController *social6 = [[CXSocialViewController alloc] init];
+    social6.title = @"娱乐";
+    [self addChildViewController:social6];
+
+
+}
+
+
+
 
 /**
  * 添加标题
